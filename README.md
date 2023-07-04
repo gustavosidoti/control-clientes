@@ -1,27 +1,34 @@
 # ControlClientes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+<h3>About this project</h3>
 
-## Development server
+ControlClientes is a is a client manager. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h3 align="left">Languages and Tools:</h3>
 
-## Code scaffolding
+<p align="left"> <a href="https://angular.io/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="angular" width="40" height="40"/> </a><a href="https://firebase.google.com/docs" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> 
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3>Views</h3>
+<img align="center" src="https://res.cloudinary.com/dsnccd8pt/image/upload/v1688501344/Control-clientes/login_drc1hp.png" height="400" width="700" />
+<img align="center" src="https://res.cloudinary.com/dsnccd8pt/image/upload/v1688501344/Control-clientes/dashboard_czfteg.png" height="400" width="700" />
+<img align="center" src="https://res.cloudinary.com/dsnccd8pt/image/upload/v1688501344/Control-clientes/configuracion_thx1ar.png" height="400" width="700" />
+<img align="center" src="https://res.cloudinary.com/dsnccd8pt/image/upload/v1688501344/Control-clientes/modificar_kosbo9.png" height="400" width="700" />
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h3>Installation</h3>
 
-## Running unit tests
+Install the dependencies and start.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+git clone https://github.com/gustavosidoti/control-clientes.git
+cd control-clientes
+npm install
+ng serve -o
+```
 
-## Running end-to-end tests
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/gustavo-sidoti/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/gustavo-sidoti/" height="30" width="40" /></a>
+</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
