@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // modulos de firestore
 import { environment } from 'src/environments/environment';
 import {AngularFireModule } from '@angular/fire/compat';
-import {AngularFirestoreModule,Settings} from '@angular/fire/compat/firestore';
+import {AngularFirestoreModule,SETTINGS,Settings} from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { FormsModule} from '@angular/forms';
 
@@ -27,6 +27,9 @@ import { LoginService } from './servicios/login.service';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { AuthGuard } from './guardianes/auth.guard';
+import { ConfiguracionServicio } from './servicios/configuracion.service';
+import { ConfiguracionGuard } from './guardianes/configuracion.guard';
 
 
 @NgModule({
@@ -56,7 +59,13 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
   
     
   ],
-  providers: [ClienteServicio, LoginService],
+  providers: [ClienteServicio,
+              LoginService,
+              AuthGuard,
+              ConfiguracionServicio,
+              ConfiguracionGuard,
+              { provide: SETTINGS, useValue:{} }
+            ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

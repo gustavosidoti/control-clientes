@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 import { LoginService } from '../../servicios/login.service';
 
 @Component({
@@ -29,7 +30,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/']);
     })
     .catch(error =>{
-      console.log(error);
+      Swal.fire('Error', "Usuario o contraseña incorrecto", 'error')
     })
   }
 

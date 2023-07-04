@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cliente } from 'src/app/modelo/cliente.model';
+import Swal from 'sweetalert2';
 import { ClienteServicio } from '../../servicios/cliente.service';
 
 @Component({
@@ -29,7 +30,7 @@ export class EditarClientesComponent implements OnInit {
 
   guardar({value, valid}: {value: Cliente, valid:boolean}){
     if(!valid){
-      console.log('error en formualrio')
+      Swal.fire('Error', 'Error al guardar los datos', 'error')
     }else{
       value.id = this.id;
       // Modificar el cliente
